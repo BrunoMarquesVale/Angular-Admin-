@@ -18,6 +18,10 @@ namespace WebApplication3.Controllers
         {
             ViewBag.Title = "Teste Page";
 
+            var customerDb = new Admin.Repository.TesteRepository();
+            var a = customerDb.GetAll();
+
+
             return View();
         }
     }
